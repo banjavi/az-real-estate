@@ -3,7 +3,7 @@
 Predicting house prices using Ridge Regression and Neural Networks. Data scraped from Redfin represents a sample of 50K houses sold between 2020 and 2023 across all zip codes in Maricopa county.
 
 # Data Preprocessing 🧹
-In our dataset, we've harnessed data from transactions spanning 2020 to 2023, focused on properties in Maricopa county. A series of preprocessing steps were undertaken:
+A series of preprocessing steps were undertaken:
 
 - **Feature Engineering**: Derived temporal trends using SALE_YEAR and SALE_MONTH from the SOLD DATE. Calculated the age of each property with PROPERTY_AGE.
 - **Feature Selection**: Dropped irrelevant columns to focus on the most pertinent features.
