@@ -1,6 +1,16 @@
 # Real Estate Price Prediction 🏠
 
-Predicting house prices using Ridge Regression and Neural Networks.
+Predicting house prices using Ridge Regression and Neural Networks. Data scraped from Redfin represents a sample of 50K houses sold between 2020 and 2023 across all zip codes in Maricopa county.
+
+# Data Preprocessing 🧹
+In our dataset, we've harnessed data from transactions spanning 2020 to 2023, focused on properties in Maricopa county. A series of preprocessing steps were undertaken:
+
+- **Feature Engineering**: Derived temporal trends using SALE_YEAR and SALE_MONTH from the SOLD DATE. Calculated the age of each property with PROPERTY_AGE.
+- **Feature Selection**: Dropped irrelevant columns to focus on the most pertinent features.
+- **Handling Missing Values**: Numerical features were imputed with median, while categorical features used mode.
+- **One-Hot Encoding**: 'PROPERTY TYPE', 'CITY', and 'ZIP OR POSTAL CODE' were one-hot encoded.
+- **Skewness Treatment**: Positively skewed features underwent log-transformations, while negatively skewed features were cube transformed.
+- **Feature Scaling**: Standardized features using the StandardScaler.
 
 ## Comparison between Actual and Predicted Prices
 
@@ -42,10 +52,10 @@ Considering the average and median house prices, the MAE values for both models 
 
 ## Future Work 🔮
 
-- **Data Enhancement:** Improve dataset for better Neural Network performance.
+- **Data Enhancement:** Improve and increase the dataset sample size for enhanced Neural Network performance.
 - **Tuning:** Optimize hyperparameters for both models.
 - **Ensemble Methods:** Combine predictions for potentially better results.
 - **Neural Network Exploration:** Refine predictions with different architectures.
-- **API Limitation:** Address the 350-record limitation of the Redfin API for richer datasets.
+- **API Limitation:** Overcome the limitation of the Redfin API, which allows only 350 records per zip code for each time period, to achieve richer datasets.
 
 [Issue Link](https://github.com/ryansherby/RedfinScraper/issues/7)
