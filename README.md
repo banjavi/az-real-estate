@@ -57,5 +57,5 @@ Considering the average and median house prices, the MAE values for both models 
 - **Ensemble Methods:** Combine predictions for potentially better results.
 - **Neural Network Exploration:** Refine predictions with different architectures.
 - **API Limitation:** Overcome the limitation of the Redfin API, which allows only 350 records per zip code for each time period, to achieve richer datasets.
-
+- **Web App Development**: Design and implement a web application where users can input an address, and the model provides a real-time price prediction.
 [Issue Link](https://github.com/ryansherby/RedfinScraper/issues/7)
